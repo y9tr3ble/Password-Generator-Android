@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <Button
+        android:id="@+id/generate_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_button"
+        android:gravity="center"
+        android:layout_marginTop="300dp"
+        android:text="Generate"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/password_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="4dp"
+        android:text="Password:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/copy_button"
+        android:layout_height="wrap_content"
+        android:layout_width="260dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Copy"
+        android:visibility="gone"
+        android:backgroundTint="#660099"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="350dp"
+        android:gravity="center"
+        android:text="Made By Tr3ble with ❤"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+</LinearLayout>
