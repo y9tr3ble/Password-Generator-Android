@@ -1,4 +1,9 @@
 ## Password Generator Readme
+
+<h1 align="center">Language
+ 
+ ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
+  
 # Introduction
 Password Generator is a simple, yet powerful tool that helps you perform a specific task. Whether you need to generate something or copy a string of text, Password Generator is here to help.
 
