@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/password_length_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password Length"
+        android:layout_marginTop="280dp"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+
+    <SeekBar
+        android:id="@+id/password_length_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:max="14"
+        android:min="8"
+        android:progressDrawable="@drawable/custom_seekbar"
+        android:thumb="@drawable/custom_thumb"
+        android:tickMark="@drawable/custom_tick_mark" />
+
+    <TextView
+        android:id="@+id/password_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password: "
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="3dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/generate_button"
+            android:layout_width="139dp"
+            android:layout_height="match_parent"
+            android:text="Generate" />
+
+
+        <Button
+            android:id="@+id/copy_button"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Copy"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>
