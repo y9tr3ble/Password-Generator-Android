@@ -23,4 +23,4 @@ Android 4.4 or higher
 A device with at least 1GB of RAM
 
 # License
-Password Generator is licensed under the Apache License 2.0. Please see the LICENSE file for more information.
+Password Generator is licensed under the MIT License. Please see the LICENSE file for more information.
