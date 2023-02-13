@@ -16,46 +16,61 @@ class MainActivity : AppCompatActivity() {
     private lateinit var passwordTextView: TextView
     private lateinit var passwordLengthSeekBar: SeekBar
     private lateinit var passwordLengthTextView: TextView
+    private lateinit var generateButton: Button
+    private lateinit var copyButton: Button
+    private val passwordLengthSeekBarListener = object : SeekBar.OnSeekBarChangeListener {
+        override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+            passwordLengthTextView.text = (progress).toString()
+        }
+
+        override fun onStartTrackingTouch(seekBar: SeekBar?) {}
+        override fun onStopTrackingTouch(seekBar: SeekBar?) {}
+    }
+    private val passwordGenerationListener = View.OnClickListener {
+        generatePassword()
+    }
+    private val passwordCopyListener = View.OnClickListener {
+        copyPasswordToClipboard()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-            setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main)
+        initViews()
+        setListeners()
+    }
 
+    private fun initViews() {
         passwordTextView = findViewById(R.id.password_text_view)
         passwordLengthSeekBar = findViewById(R.id.password_length_seek_bar)
         passwordLengthTextView = findViewById(R.id.password_length_text_view)
-
-            passwordLengthSeekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
-                override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-                    passwordLengthTextView.text = (progress).toString()
-                }
-
-                override fun onStartTrackingTouch(seekBar: SeekBar?) {}
-                override fun onStopTrackingTouch(seekBar: SeekBar?) {}
-            })
-
-            val generateButton = findViewById<Button>(R.id.generate_button)
-        val copyButton = findViewById<Button>(R.id.copy_button)
-
+        generateButton = findViewById(R.id.generate_button)
+        copyButton = findViewById(R.id.copy_button)
+        passwordLengthSeekBar.setOnSeekBarChangeListener(passwordLengthSeekBarListener)
         copyButton.visibility = View.GONE
+    }
 
-        generateButton.setOnClickListener {
-            val random = Random
-            val passwordLength = passwordLengthSeekBar.progress
-            val password = CharArray(passwordLength) {
-                val ranges = listOf('a'..'z', 'A'..'Z', '0'..'9')
-                val range = ranges.random(random)
-                range.random(random)
-            }
-            passwordTextView.text = "Password: ${password.joinToString("")}"
-            copyButton.visibility = View.VISIBLE
-        }
+    private fun setListeners() {
+        generateButton.setOnClickListener(passwordGenerationListener)
+        copyButton.setOnClickListener(passwordCopyListener)
+    }
 
-        copyButton.setOnClickListener {
-            val clipboard = getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
-            val clip = ClipData.newPlainText("Password", passwordTextView.text.toString().substring(10))
-            Toast.makeText(this, "Password copied to clipboard", Toast.LENGTH_SHORT).show()
-            clipboard.setPrimaryClip(clip)
+    private fun generatePassword() {
+        val random = Random
+        val passwordLength = passwordLengthSeekBar.progress
+        val password = CharArray(passwordLength) {
+            val ranges = listOf('a'..'z', 'A'..'Z', '0'..'9')
+            val range = ranges.random(random)
+            range.random(random)
         }
+        passwordTextView.text = "Password: ${password.joinToString("")}"
+        copyButton.visibility = View.VISIBLE
+    }
+
+    private fun copyPasswordToClipboard() {
+        val clipboard = getSystemService(CLIPBOARD_SERVICE) as ClipboardManager
+        val clip = ClipData.newPlainText("Password", passwordTextView.text.toString().substring(10))
+        Toast.makeText(this, "Password copied to clipboard", Toast.LENGTH_SHORT).show()
+        clipboard.setPrimaryClip(clip)
     }
 }
