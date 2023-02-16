@@ -5,7 +5,8 @@
  
  # Interface
  
-![image](https://user-images.githubusercontent.com/69369034/218317092-a4770ca7-3dd3-4944-9f92-49022a085800.png) ![image](https://user-images.githubusercontent.com/69369034/218317159-e1a8f8e9-7bfb-49fe-b19a-e44cb8fdd698.png)
+![image](https://user-images.githubusercontent.com/69369034/219230866-3b02d222-5c13-4f54-8f00-e5df93d97730.png) ![image](https://user-images.githubusercontent.com/69369034/219230970-6b9fc818-ba3a-4260-b817-dc66ddf58f51.png)
+
 
 
   
