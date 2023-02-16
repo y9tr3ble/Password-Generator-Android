@@ -9,14 +9,10 @@
     <color name="white">#FFFFFFFF</color>
     <color name="transparent">#00000000</color>
     <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="backgroundColor">#FFFFFF</color>
     <color name="textColor">#000000</color>
     <color name="darkBackgroundColor">#212121</color>
     <color name="darkTextColor">#FFFFFF</color>
-    <color name="colorPrimaryDark">#3d3d3d</color>
-    <color name="colorAccentDark">#ffffff</color>
-    <color name="backgroundDark">#1b1b1b</color>
-    <color name="textColorPrimaryDark">#ffffff</color>
-    <color name="textColorSecondaryDark">#bbbbbb</color>
 </resources>
