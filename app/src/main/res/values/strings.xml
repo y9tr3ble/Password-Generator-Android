@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Password Generator</string>
     <string name="password_length_hint" translatable="false">8</string>
+    <string name="use_numbers">Use Numbers</string>
+    <string name="use_special_characters">Use Special Characters</string>
+    <string name="copy">Copy</string>
+    <string name="generate">Generate</string>
+    <string name="press_generate">Press Generate</string>
 </resources>
