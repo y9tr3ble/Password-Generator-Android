@@ -5,7 +5,8 @@
  
  # Interface
  
-![image](https://user-images.githubusercontent.com/69369034/220115498-ac5b39e5-7cd7-4ec0-8ad6-a63befc52d5c.png) ![image](https://user-images.githubusercontent.com/69369034/220115631-70abeca8-ead9-44d8-a8a1-7fd3f7c7c39a.png)
+![image](https://user-images.githubusercontent.com/69369034/221321601-654b4e1c-5241-4d1e-abf8-ebd45d755bc4.png)
+
   
 # Introduction
 Password Generator is a simple, yet powerful tool that helps you perform a specific task. Whether you need to generate something or copy a string of text, Password Generator is here to help.
