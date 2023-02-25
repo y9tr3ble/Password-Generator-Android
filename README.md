@@ -9,11 +9,15 @@
 
   
 # Introduction
-Password Generator is a simple, yet powerful tool that helps you perform a specific task. Whether you need to generate something or copy a string of text, Password Generator is here to help.
+This is a simple password generator app for Android devices. It allows you to generate passwords of varying length and complexity, and copy them to your device's clipboard for easy use.
 
-# Features
-Generate button: Pressing this button will generate a random string of text.
-Copy button: After pressing the Generate button, you can press the Copy button to easily copy the generated text to your clipboard.
+# How to use
+Install the app on your Android device.
+Open the app and set your desired password length using the slider at the top.
+Toggle the "Use Numbers" and "Use Special Characters" switches on or off depending on whether you want those types of characters included in your password.
+Click the "Generate" button to generate a new password. The password will appear on the screen one character at a time, and you can copy it to your clipboard by clicking the "Copy" button.
+Use your new password wherever you need a secure password!
+
 # Installation
 To install Password Generator, simply download the APK file from the release section and install it on your device.
 
